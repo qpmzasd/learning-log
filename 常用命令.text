@@ -1,0 +1,14 @@
+创建虚拟环境
+python -m venv ll_env
+
+win激活虚拟环境
+ll_env\Scripts\activate
+
+安装Django
+pip install django
+
+创建或迁移数据库
+python manage.py migrate
+
+运行项目
+python manage.py runserver
