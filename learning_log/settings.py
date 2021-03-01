@@ -140,5 +140,3 @@ if os.environ.get('DEBUG') == 'TRUE':
 elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
 
-#安全警告: 不要在在线环境中启用测试
-DEBUG = False
