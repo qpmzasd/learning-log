@@ -12,3 +12,6 @@ python manage.py migrate
 
 运行项目
 python manage.py runserver
+
+登陆heroku
+heroku login
