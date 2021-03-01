@@ -2,7 +2,7 @@
 {% load bootstrap4 %}
 
 {% block page_header %}
-  <h2>Edit entry.</h2>
+  <h2>Edit topic.</h2>
 {% endblock page_header %}
 
 
@@ -10,9 +10,9 @@
 
   <p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
 
-  <p>Edit entry:</p>
+  <p>Edit topic:</p>
 
-  <form action="{% url 'learning_logs:edit_entry' entry.id %}" method='post'>
+  <form action="{% url 'learning_logs:edit_topic' topic.id %}" method='post'>
       {% csrf_token %}
       {{form.as_p }}
       <button name="submit">保存修改Entry</button>
