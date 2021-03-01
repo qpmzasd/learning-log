@@ -13,6 +13,9 @@ python manage.py migrate
 运行项目
 python manage.py runserver
 
+创建超级账户
+python manage.py createsuperuser
+
 初始化GIT
 git init
 
@@ -39,3 +42,10 @@ heroku ps
 
 heroku打开
 heroku open
+
+在heroku上建立数据库
+heroku run python manage.py migrate
+heroku run python manage.py createsuperuser
+
+修改域名
+heroku apps:rename simplealable
