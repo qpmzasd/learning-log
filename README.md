@@ -1,2 +1,2 @@
 # manage.py
-测试测试
+Simple的Django课程练习
