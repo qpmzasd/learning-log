@@ -13,5 +13,29 @@ python manage.py migrate
 运行项目
 python manage.py runserver
 
+初始化GIT
+git init
+
+将未被忽略的文件加入库
+git add .
+
+提交修改a并记录m
+git commit -am "日期"
+
+git 状态
+git status
+
 登陆heroku
 heroku login
+
+创建APP
+heroku create
+
+上传到heroku
+git push heroku master
+
+heroku全面配置
+heroku ps
+
+heroku打开
+heroku open
