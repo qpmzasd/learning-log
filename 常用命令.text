@@ -49,3 +49,7 @@ heroku run python manage.py createsuperuser
 
 修改域名
 heroku apps:rename simplealable
+
+屏蔽告警
+heroku config:set DEBUG='TRUE'
+heroku config:set DEBUG='FLASE'

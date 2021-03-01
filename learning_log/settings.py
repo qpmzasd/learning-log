@@ -134,9 +134,12 @@ LOGIN_URL = 'users:login'
 import django_heroku
 django_heroku.settings(locals())
 
+
+
 #安全设置
 if os.environ.get('DEBUG') == 'TRUE':
     DEBUG = True
 elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
 
+#DEBUG = False
