@@ -6,8 +6,8 @@ from . import views
 
 app_name = 'users'
 urlpatterns = [
-    #包含默认的身份验证url
+    # Include default auth urls.
     path('', include('django.contrib.auth.urls')),
-    #注册页面
+    # Registration page.
     path('register/', views.register, name='register'),
 ]

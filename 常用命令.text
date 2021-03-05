@@ -11,7 +11,7 @@ pip install django
 python manage.py migrate
 
 运行项目
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
 
 创建超级账户
 python manage.py createsuperuser
@@ -52,4 +52,4 @@ heroku apps:rename simplealable
 
 屏蔽告警
 heroku config:set DEBUG='TRUE'
-heroku config:set DEBUG='FLASE'
+heroku config:set DEBUG='FALSE'

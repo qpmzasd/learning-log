@@ -25,7 +25,7 @@ SECRET_KEY = ')+s9i^!(kcqw4z=_f8dkednmype*90@9&(%s6z3f)-($+g59k2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -135,11 +135,8 @@ import django_heroku
 django_heroku.settings(locals())
 
 
-
 #安全设置
 if os.environ.get('DEBUG') == 'TRUE':
     DEBUG = True
 elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
-
-#DEBUG = False
